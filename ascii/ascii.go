@@ -1,13 +1,17 @@
 package ascii
 
 import (
-	"fmt"
+	// "fmt"
+	"strings"
 )
 
-// AsciiArt processes words, printing their ASCII art 
+// AsciiArt processes words, printing their ASCII art
 // character by character and adding new lines as needed.
 
-func AsciiArt(words []string, contents2 []string) {
+func AsciiArt(words []string, contents2 []string) string {
+
+	var result strings.Builder
+
 	countSpace := 0
 	for _, word := range words {
 		if word != "" {
@@ -17,19 +21,20 @@ func AsciiArt(words []string, contents2 []string) {
 						continue
 					}
 					if !(char >= 32 && char <= 126) {
-						fmt.Println("Error: Input contains non-ASCII characters")
-						return
+						result.WriteString("Error: Input contains non-ASCII characters")	
+						
 					}
 					// Print the calculated index of 'char' Ascii Art in content2. 
-					fmt.Print(contents2[int(char-' ')*9+1+i])
+					result.WriteString(contents2[int(char-' ')*9+1+i])
 				}
-				fmt.Println()
+				result.WriteString("\n")
 			}
 		} else {
 			countSpace++
 			if countSpace < len(words) {
-				fmt.Println()
+				result.WriteString("\n")
 			}
 		}
 	}
+	return result.String()
 }
