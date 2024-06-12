@@ -67,5 +67,5 @@ func main() {
 	// Split the content to a string slice and separate with newline.
 	contents2 := strings.Split(string(contents), "\n")
 
-	ascii.AsciiArt(words, contents2)
+	fmt.Print(ascii.AsciiArt(words, contents2))
 }
