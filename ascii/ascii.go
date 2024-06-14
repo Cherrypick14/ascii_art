@@ -21,10 +21,10 @@ func AsciiArt(words []string, contents2 []string) string {
 						continue
 					}
 					if !(char >= 32 && char <= 126) {
-						result.WriteString("Error: Input contains non-ASCII characters")	
-						
+						return "Error: Input contains non-ASCII characters"
+
 					}
-					// Print the calculated index of 'char' Ascii Art in content2. 
+					// Print the calculated index of 'char' Ascii Art in content2.
 					result.WriteString(contents2[int(char-' ')*9+1+i])
 				}
 				result.WriteString("\n")
