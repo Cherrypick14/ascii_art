@@ -14,7 +14,7 @@ Operating System: Windows, macOS, Linux
 
 Download/Clone:
 ```
-$ git clone https://learn.zone01kisumu.ke/git/cowalla/ascii-art
+$ git clone https://github.com/Cherrypick14/ascii_art
 ```
 
 Preconditions:
@@ -80,8 +80,8 @@ https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExam4wOTZzdmJmOHIzNGFpbTZsOWhsdm9
 
 ## Authors
 
-- [@cowalla](https://learn.zone01kisumu.ke/git/cowalla)
+- [@Cherrypick14](https://github.com/Cherrypick14)
 
-- [@mombewa](https://learn.zone01kisumu.ke/git/mombewa)
+- [@MauriceOmbewa](https://github.com/MauriceOmbewa)
 
-- [@skisenge](https://learn.zone01kisumu.ke/git/skisenge)
+- [@stkisengese](https://github.com/stkisengese)
